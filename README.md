@@ -1,1 +1,1 @@
-devtools::install.packages('seankellyhp/rKeywords')
+devtools::install_github('seankellyhp/rKeywords')
