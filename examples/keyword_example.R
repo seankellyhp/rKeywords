@@ -7,7 +7,8 @@
 # setwd()
 getwd()
 
-source("lib/keyword_funct.R")
+#devtools::install.github('rKeywords')
+library(rKeywords)
 
 # Load Required Packages
 require(dplyr, quietly = TRUE)
