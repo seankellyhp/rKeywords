@@ -44,7 +44,9 @@ rawString <- "Immigrant* OR migrant* OR asylum seeker* OR visa*"
 seedWords <- convert_bool(rawString)
 ```
 
-### Load sample corpus (quanteda format)
+### Load sample corpus
+
+Should be a sample of domain relevant text data in quanteda corpus format. 
 
 ```
 rawCorp <- readRDS("data/uk_eng_corp_sample.rds")
@@ -56,7 +58,7 @@ rawCorp <- readRDS("data/uk_eng_corp_sample.rds")
 modelPath <- 'models/glove.6B.300d.txt'
 ```
 
-### Expand Keywords 
+### Expand keywords 
 
 ```
 keywordsNew <- automate_keywords(seedWords = seedWords, 

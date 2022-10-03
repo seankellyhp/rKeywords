@@ -396,8 +396,10 @@ require(stringr, quietly = TRUE)</code></pre>
 <pre><code>rawString &lt;- &quot;Immigrant* OR migrant* OR asylum seeker* OR visa*&quot;
 seedWords &lt;- convert_bool(rawString)</code></pre>
 </div>
-<div id="load-sample-corpus-quanteda-format" class="section level3">
-<h3>Load sample corpus (quanteda format)</h3>
+<div id="load-sample-corpus" class="section level3">
+<h3>Load sample corpus</h3>
+<p>Should be a sample of domain relevant text data in quanteda corpus
+format.</p>
 <pre><code>rawCorp &lt;- readRDS(&quot;data/uk_eng_corp_sample.rds&quot;)</code></pre>
 </div>
 <div id="path-to-pre-trained-glove-word-embedding-model" class="section level3">
@@ -405,7 +407,7 @@ seedWords &lt;- convert_bool(rawString)</code></pre>
 <pre><code>modelPath &lt;- &#39;models/glove.6B.300d.txt&#39;</code></pre>
 </div>
 <div id="expand-keywords" class="section level3">
-<h3>Expand Keywords</h3>
+<h3>Expand keywords</h3>
 <pre><code>keywordsNew &lt;- automate_keywords(seedWords = seedWords, 
 corpus = rawCorp, 
 modelPath = modelPath, 
