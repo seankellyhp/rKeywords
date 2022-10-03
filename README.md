@@ -2,7 +2,7 @@
 
 This package is a work in progress tool for expanding search queries by adding domain 
 relevant keywords from a sample text. The primary function "automate_keywords()" also 
-provides meta-data about keywords using salience, parts-of-speech, named entity tagging to assist with 
+provides meta-data about keywords using word counts, parts-of-speech, and named entity tagging to assist with 
 keyword selection. 
 
 The package currently only supports English language query expansion. Additional 
