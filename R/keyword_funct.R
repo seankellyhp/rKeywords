@@ -23,8 +23,8 @@ clean_corpus <- function(seedWords, corpus, minSentenceChar = 3) {
   seedRegex <- tolower(paste(lapply(seedWords, function(x) gsub(" ", "[ -_]", x)), collapse = "|"))
 
   # Filter using seed words
-  findSeed <- stringr::str_detect(quanteda::texts(rawCorp), stringr::regex(seedRegex, ignore_case = TRUE))
-  shortCorp <- quanteda::corpus_subset(rawCorp, findSeed)
+  findSeed <- stringr::str_detect(quanteda::texts(corpus), stringr::regex(seedRegex, ignore_case = TRUE))
+  shortCorp <- quanteda::corpus_subset(corpus, findSeed)
 
   # Split sentences
   sentence_tokens <- spacyr::spacy_tokenize(shortCorp, what = "sentence",
